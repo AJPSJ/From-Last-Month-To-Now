@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("res/img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #f5ebe0;
+}
+
+/* mobile view */
+[class *= "passage-cont-"] {
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    gap: 8%;
+    text-align: center;
+    padding: 2%;
+}
+
+[class *= "date-"] {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    background-color: white;
+    border: 4px rgb(255, 94, 94) double;
+    align-content: center;
+}
+
+[id *= "passage-cont-"] {
+    font-size: 0.8rem;
+}
+
+[id *= "passage-entry-"] {
+    margin-bottom: 5%;
+    /* display: none; */
+}
+
+.passage-cont-date_today {
+    display: flex;
+    border: 0;
+}
+.date-day {
+    background-color: rgba(255, 241, 241, 0.8);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.date-today {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.passage-cont- {
+    position: relative;
+    background-color: #ff9a9ab3;
+    border: 5px rgb(255, 94, 94) double;
+    border-radius: 20px;
+}
+
+#passage-cont-content {
+    display: none;
+}
+
+.passage-cont-button {
+    border: 0;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.passage-cont-button:hover {
+    background-color: rgba(255, 241, 241, 0.5);
+    transition: 0.5s;
+}
+
+/* .passage-cont-:active .passage-cont-content {
+    display: block;
+} */
+
+#passage-entry-img {
+    width: 100%;
+    max-width: fit-content;
+    height: auto;
+    border: 1px rgb(255, 94, 94) solid;
+}
+
+/* desktop view */
+@media only screen and (min-width: 769px) {
+    [class *= "passage-cont-"] {
+        flex-direction: column;
+        width: 70%;
+        margin: 1% auto;
+        padding: 2%;
+    }
+
+    [class *= "date-"] {
+        width: 100%;
+        height: auto;
+        padding: 1% 0;
+    }
+
+    .date-day {
+        font-size: 2rem;
+    }
+    
+    .date-today {
+        font-size: 1rem;
+    }
+
+    [id *= "passage-cont-"] {
+        font-size: 1.2rem;
+    }
+
+    [id *= "passage-entry-"] {
+        margin-bottom: 5%;
+        justify-self: center;
+        /* display: none; */
+    }
+
+    footer {
+        margin-top: 15%;
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    word-wrap: break-word;
+}
+
+footer {
+    display: block;
+    background-color: #ff9a9ab3;
+    border-top: 6px rgb(255, 94, 94) double;
+    height: auto;
+    margin-top: 15%;
+    padding: 3% 5%;
+    font-size: 1.1rem;
+}
+footer ul {
+    margin: 2vh 10vw;
+}
